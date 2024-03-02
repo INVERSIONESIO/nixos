@@ -37,8 +37,6 @@ However, these settings are heavily embodied to Nix flakes, so the idea is that
 when you update something in the [flake.nix](./flake.nix) or [flake.lock](./flake.lock)
 files, you update the environments that you think will be affected by those changes.
 
-However, is recommended to you to perform both commands.
-
 ## License
 
 [MIT](./.github/LICENSE)
