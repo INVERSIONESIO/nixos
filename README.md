@@ -37,6 +37,12 @@ However, these settings are heavily embodied to Nix flakes, so the idea is that
 when you update something in the [flake.nix](./flake.nix) or [flake.lock](./flake.lock)
 files, you update the environments that you think will be affected by those changes.
 
+## Where to search more packages and options
+
+- [Search nix packages](https://search.nixos.org/packages)
+- [Search NixOS options](https://search.nixos.org/options)
+- [Search home manager options](https://mipmip.github.io/home-manager-option-search)
+
 ## License
 
 [MIT](./.github/LICENSE)
