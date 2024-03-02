@@ -1,11 +1,11 @@
-{
+{user, ...}: {
   imports = [
     ./modules
   ];
 
   home = {
-    homeDirectory = "/home/guest";
-    username = "guest";
+    homeDirectory = "/home/${user.alias}";
+    username = user.alias;
     stateVersion = "24.05";
   };
 

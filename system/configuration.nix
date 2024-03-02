@@ -1,6 +1,8 @@
 {
   grub-pkgs,
   config,
+  user,
+  host,
   pkgs,
   ...
 }: {
@@ -29,7 +31,7 @@
     supportedFilesystems = ["ntfs"];
   };
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = host.name;
 
   # Set your time zone.
   time.timeZone = "America/Lima";
@@ -54,9 +56,9 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."guest" = {
+  users.users.${user.alias} = {
     isNormalUser = true;
-    description = "Guest user";
+    description = user.fullName;
     extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       firefox

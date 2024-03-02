@@ -26,18 +26,28 @@
         inherit system;
       };
 
+      host = {
+        # Define your hostname.
+        name = "nixos";
+      };
+
+      user = {
+        fullName = "Guest user";
+        alias = "guest";
+      };
+
       specialArgs =
         {
           grub-pkgs = grub-themes.packages.${system};
           pkgsx = import ./pkgs {inherit pkgs;};
 
           inherit (hyprland.packages.${system}) hyprland xdg-desktop-portal-hyprland;
-          inherit pkgs;
+          inherit pkgs host user;
         }
         // hyprland-contrib.packages.${system}
         // scripts.packages.${system};
     in {
-      nixosConfigurations."nixos" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.${host.name} = nixpkgs.lib.nixosSystem {
         inherit (pkgs) system;
         inherit specialArgs;
 
@@ -46,7 +56,7 @@
         ];
       };
 
-      homeConfigurations."guest" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.${user.alias} = home-manager.lib.homeManagerConfiguration {
         extraSpecialArgs = specialArgs;
         inherit pkgs;
 
