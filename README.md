@@ -1,4 +1,4 @@
-# NixOS
+# [NixOS](https://nixos.org/)
 
 ## Build a new generation
 
