@@ -1,5 +1,22 @@
 # [NixOS](https://nixos.org/)
 
+## Expectations
+
+### Have a fast setup that any organization collaborator can install in their computer
+
+Even if they come from other operating systems they can have a very stable workstation with all the tools installed
+to start developing.
+
+### Solve the pain of versioned software development tools
+
+In software development we use tools that might not always work in all projects, in this case
+we would solve this by using [dev shell](https://fasterthanli.me/series/building-a-rust-service-with-nix/part-10) + [direnv](https://direnv.net/) in each local project. This is completely agnostic for
+developers who don't share the same thoughts or operating system.
+
+An excellent example of this is [nvm](https://github.com/nvm-sh/nvm), which is a tool that works well, but the idea
+here is to forget the specific version that each project we are working on uses. This would be delegated to a single
+maintenance operation instead of a pain that is present *n times* in every developer's  day.
+
 ## Build a new generation
 
 For both of the sections below you'll need to execute the showcased commands in the
