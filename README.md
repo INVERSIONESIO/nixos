@@ -17,12 +17,20 @@ An excellent example of this is [nvm](https://github.com/nvm-sh/nvm), which is a
 here is to forget the specific version that each project we are working on uses. This would be delegated to a single
 maintenance operation instead of a pain that is present *n times* in every developer's  day.
 
-## Build a new generation
+## Cheatsheet
+
+### Where to search more packages and options
+
+- [Search nix packages](https://search.nixos.org/packages)
+- [Search NixOS options](https://search.nixos.org/options)
+- [Search home manager options](https://mipmip.github.io/home-manager-option-search)
+
+### Build a new generation
 
 For both of the sections below you'll need to execute the showcased commands in the
 same directory where the dotfiles were cloned.
 
-### [NixOS configuration](https://github.com/NixOS/nixpkgs/tree/master/nixos/modules)
+#### [NixOS configuration](https://github.com/NixOS/nixpkgs/tree/master/nixos/modules)
 
 If you recently modified something from the [./system](./system) AKA NixOS configuration files
 you'll need to use this command.
@@ -37,7 +45,7 @@ $ sudo nixos-rebuild switch --upgrade --flake .
 $ sudo nixos-rebuild boot --upgrade --flake .
 ```
 
-### [Home manager](https://github.com/nix-community/home-manager/tree/master/modules)
+#### [Home manager](https://github.com/nix-community/home-manager/tree/master/modules)
 
 Use this command if you modified something from the [./home](./home/) AKA home manager
 configuration files.
@@ -54,14 +62,7 @@ However, these settings are heavily embodied to Nix flakes, so the idea is that
 when you update something in the [flake.nix](./flake.nix) or [flake.lock](./flake.lock)
 files, you update the environments that you think will be affected by those changes.
 
-## Where to search more packages and options
-
-- [Search nix packages](https://search.nixos.org/packages)
-- [Search NixOS options](https://search.nixos.org/options)
-- [Search home manager options](https://mipmip.github.io/home-manager-option-search)
-
-
-## How to update a flake input
+### How to update a flake input
 
 Each flake entry has a fixed (time-lined) version of itself declared in [flake.lock](./flake.lock),
 this ensures reproducibility on the used flakes, but you will need to periodically update the
