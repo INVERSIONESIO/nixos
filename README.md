@@ -43,6 +43,22 @@ files, you update the environments that you think will be affected by those chan
 - [Search NixOS options](https://search.nixos.org/options)
 - [Search home manager options](https://mipmip.github.io/home-manager-option-search)
 
+
+## How to update a flake input
+
+Each flake entry has a fixed (time-lined) version of itself declared in [flake.lock](./flake.lock),
+this ensures reproducibility on the used flakes, but you will need to periodically update the
+entries for each third-party flake. To achieve this you just have to run this:
+
+```sh
+# You can press <tab> to autocomplete the input names.
+$ nix flake lock --update-input <input-name>
+```
+
+This will update the specified input in the [flake.lock](./flake.lock) file but now
+is in you to update your [NixOS](./system) and [Home manager](./home) setup and
+check that everything's working as expected.
+
 ## License
 
 [MIT](./.github/LICENSE)
