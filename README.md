@@ -76,6 +76,10 @@ This will update the specified input in the [flake.lock](./flake.lock) file but 
 is in you to update your [NixOS](./system) and [Home manager](./home) setup and
 check that everything's working as expected.
 
+## Throubleshooting
+
+ - [Wireless connection instantly fails on startup when just switched from Windows](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi#about_dual-boot_with_windows_and_fast-boot_enabled).
+
 ## License
 
 [MIT](./.github/LICENSE)
