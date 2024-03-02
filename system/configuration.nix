@@ -7,7 +7,6 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-
     ./modules
   ];
 
@@ -53,7 +52,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."guest" = {

@@ -51,6 +51,7 @@
         inherit pkgs;
 
         modules = [
+          ./home/options
           ./home/home.nix
         ];
       };

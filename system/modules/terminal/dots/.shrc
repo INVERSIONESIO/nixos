@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cheat() {
+    curl "cheat.sh/$1"
+}
+
+unsafe_env() {
+    cd "$(mktemp -d --suffix="-unsafe-env")" || exit 1
+}

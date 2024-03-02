@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./nest-cli.nix
+  ];
+}
