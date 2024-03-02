@@ -5,7 +5,7 @@
 For both of the sections below you'll need to execute the showcased commands in the
 same directory where the dotfiles were cloned.
 
-### NixOS configuration
+### [NixOS configuration](https://github.com/NixOS/nixpkgs/tree/master/nixos/modules)
 
 If you recently modified something from the [./system](./system) AKA NixOS configuration files
 you'll need to use this command.
@@ -20,7 +20,7 @@ $ sudo nixos-rebuild switch --upgrade --flake .
 $ sudo nixos-rebuild boot --upgrade --flake .
 ```
 
-### Home manager
+### [Home manager](https://github.com/nix-community/home-manager/tree/master/modules)
 
 Use this command if you modified something from the [./home](./home/) AKA home manager
 configuration files.
