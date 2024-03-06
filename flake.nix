@@ -49,8 +49,6 @@
         alias = "guest";
       };
 
-      dotfilesDir = "~/.dotfiles";
-
       specialArgs =
         {
           grub-pkgs = grub-themes.packages.${system};
