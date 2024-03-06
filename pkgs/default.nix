@@ -3,6 +3,7 @@ with pkgs.lib; let
   packages = {
     vimix-cursor-theme = ./vimix-cursor-theme.nix;
     ecsview = ./ecsview.nix;
+    ght = ./ght.nix;
     stu = ./stu.nix;
   };
 in
