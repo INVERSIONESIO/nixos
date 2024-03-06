@@ -13,6 +13,7 @@
     scripts.url = "github:luisnquin/scripts";
     hyprland.url = "github:hyprwm/Hyprland";
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    nao.url = "github:luisnquin/nao";
   };
 
   outputs = inputs:
@@ -81,6 +82,7 @@
         inherit pkgs;
 
         modules = [
+          nao.homeManagerModules.default
           spicetify-nix.homeManagerModule
           ./home/options
           ./home/home.nix
