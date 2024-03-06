@@ -1,6 +1,6 @@
 self: let
   inherit (import ./binds.nix self) mainMod binds mouseBinds;
-  inherit (self) host;
+  inherit (self) host lib;
 
   window = import ./window.nix;
   exec = {
