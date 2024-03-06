@@ -58,6 +58,7 @@
 
           inherit (hyprland.packages.${system}) hyprland xdg-desktop-portal-hyprland;
           inherit pkgs host user;
+          inherit pkgs host user dotfilesDir;
         }
         // hyprland-contrib.packages.${system}
         // scripts.packages.${system};
