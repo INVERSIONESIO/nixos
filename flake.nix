@@ -13,6 +13,7 @@
     scripts.url = "github:luisnquin/scripts";
     hyprland.url = "github:hyprwm/Hyprland";
     nixpkgs.url = "nixpkgs/nixos-unstable";
+    senv.url = "github:luisnquin/senv";
     nao.url = "github:luisnquin/nao";
   };
 
@@ -61,6 +62,7 @@
 
           mysql_57 = (import nixpkgs_mysql_57 {inherit system;}).mysql57;
           spicetify = spicetify-nix.packages.${pkgs.system}.default;
+          senv = senv.defaultPackage.${system};
 
           inherit (hyprland.packages.${system}) hyprland xdg-desktop-portal-hyprland;
           inherit pkgs host user dotfilesDir;
