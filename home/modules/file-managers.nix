@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ ...}: {
   home.packages = [
     (
       super.ranger.overrideAttrs (
