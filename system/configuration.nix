@@ -64,6 +64,8 @@
       firefox
       #  thunderbird
     ];
+
+    shell = pkgs.zsh;
   };
 
   # Allow unfree packages
