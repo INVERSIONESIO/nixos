@@ -6,6 +6,7 @@
     ./dev
 
     ./file-managers.nix
+    ./gui-programs.nix
     ./browser.nix
   ];
 }
