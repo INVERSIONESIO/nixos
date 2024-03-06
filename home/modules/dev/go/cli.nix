@@ -8,6 +8,6 @@
   };
 
   xdg.configFile = {
-    "go/env".text = builtins.readFile ../../../dots/go/env;
+    "go/env".text = builtins.readFile ./dots/env;
   };
 }
