@@ -30,13 +30,17 @@
         name = "nixos";
 
         monitors = [
+          # { resolution = "1920x1080"; position = "0x0"; scale = "1"; }
           {
-            resolution = "1920x1080";
+            resolution = "highres";
+            position = "1920x0";
+            scale = "1";
+          }
+          {
+            resolution = "1600x900";
             position = "0x0";
             scale = "1";
           }
-          # { resolution = "highres"; position = "1920x0"; scale = "1"; }
-          # { resolution = "1600x900"; position = "0x0"; scale = "1"; }
         ];
       };
 
