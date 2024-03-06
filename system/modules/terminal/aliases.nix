@@ -1,4 +1,4 @@
-{
+{dotfilesDir, ...}: {
   environment.shellAliases = {
     tmp = "cd /tmp/";
 
@@ -23,5 +23,8 @@
     poff = "poweroff";
     py = "python3";
     tt = "ranger";
+
+    sb = "cd ${dotfilesDir}/home/modules/desktop/wayland/hyprland/binds.nix";
+    dot = "cd ${dotfilesDir}";
   };
 }
