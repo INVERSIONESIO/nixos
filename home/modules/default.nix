@@ -5,6 +5,7 @@
     ./editors
     ./dev
 
+    ./file-managers.nix
     ./browser.nix
   ];
 }
