@@ -29,13 +29,14 @@ window#waybar {
 }
 
 window>box {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    background-color: rgba(41, 20, 84, 0.4);
-    padding: 3px;
-    padding-left: 8px;
-    border: 2px none #33ccff;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    background-color: rgba(0, 0, 0, 0.281);
+    /* background-color: rgba(41, 20, 84, 0.4);  3 8*/
+    padding: 2px;
+    padding-left: 4px;
+    border: 1px none #33ccff;
 }
 
 #workspaces {
@@ -75,7 +76,7 @@ tooltip label {
 }
 
 #custom-launcher {
-    font-size: 20px;
+    font-size: 12;
     padding-left: 8px;
     padding-right: 6px;
     color: #7ebae4;
@@ -109,8 +110,9 @@ tooltip label {
 }
 
 #custom-clock {
-    color: #e8cef5;
-    padding: 0 12px;
+    color: #86c3db;
+    padding: 0 10px;
+    font-size: 10pt;
 }
 
 #custom-wall {
