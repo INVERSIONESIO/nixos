@@ -7,6 +7,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs_mysql_57.url = "github:NixOS/nixpkgs?rev=06c9198cbf48559191bf6c9b76c0f370f96b8c33";
+    spicetify-nix.url = "github:the-argus/spicetify-nix";
     grub-themes.url = "github:luisnquin/grub-themes";
     hyprland-contrib.url = "github:hyprwm/contrib";
     scripts.url = "github:luisnquin/scripts";
@@ -57,8 +58,10 @@
           grub-pkgs = grub-themes.packages.${system};
           pkgsx = import ./pkgs {inherit pkgs;};
 
-          inherit (hyprland.packages.${system}) hyprland xdg-desktop-portal-hyprland;
           mysql_57 = (import nixpkgs_mysql_57 {inherit system;}).mysql57;
+          spicetify = spicetify-nix.packages.${pkgs.system}.default;
+
+          inherit (hyprland.packages.${system}) hyprland xdg-desktop-portal-hyprland;
           inherit pkgs host user dotfilesDir;
         }
         // hyprland-contrib.packages.${system}
@@ -78,6 +81,7 @@
         inherit pkgs;
 
         modules = [
+          spicetify-nix.homeManagerModule
           ./home/options
           ./home/home.nix
         ];
