@@ -6,6 +6,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixpkgs_2022.url = "github:NixOS/nixpkgs?rev=06c9198cbf48559191bf6c9b76c0f370f96b8c33";
     grub-themes.url = "github:luisnquin/grub-themes";
     hyprland-contrib.url = "github:hyprwm/contrib";
     scripts.url = "github:luisnquin/scripts";
@@ -57,7 +58,7 @@
           pkgsx = import ./pkgs {inherit pkgs;};
 
           inherit (hyprland.packages.${system}) hyprland xdg-desktop-portal-hyprland;
-          inherit pkgs host user;
+          mysql_57 = (import nixpkgs_2022 {inherit system;}).mysql57;
           inherit pkgs host user dotfilesDir;
         }
         // hyprland-contrib.packages.${system}
