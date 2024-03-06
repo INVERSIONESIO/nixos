@@ -4,12 +4,12 @@ in {
   general = ''
     layout = dwindle
 
-    gaps_in = 4
-    gaps_out = 20
-    border_size = 1
+    gaps_in = 3
+    gaps_out = 12
+    border_size = 3
 
-    col.active_border = rgba(595959aa)
-    col.inactive_border = rgba(595959aa)
+    col.active_border = rgba(000000ff)
+    col.inactive_border = rgba(59595900)
   '';
 
   decoration = ''
@@ -20,8 +20,8 @@ in {
         passes = 1
     }
 
-    active_opacity = 0.9
-    inactive_opacity = 1.0
+    active_opacity = 1.0
+    inactive_opacity = 0.9
     fullscreen_opacity = 1.0
 
     drop_shadow = yes
