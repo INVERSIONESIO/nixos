@@ -4,5 +4,7 @@
     ./desktop
     ./editors
     ./dev
+
+    ./browser.nix
   ];
 }
