@@ -80,6 +80,7 @@ check that everything's working as expected.
 ## Throubleshooting
 
  - [Wireless connection instantly fails on startup when just switched from Windows](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi#about_dual-boot_with_windows_and_fast-boot_enabled).
+ - **macOS VM fails to build.** Ensure to enable the virtualisation capacibilities for your CPU in your **BIOS**. You might find this option as "Intel (VMX) Virtualization Technology".
 
 ## License
 
