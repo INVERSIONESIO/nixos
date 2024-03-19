@@ -1,4 +1,4 @@
-{ ...}: {
+{...}: {
   networking.networkmanager.enable = true;
 
   environment.interactiveShellInit = ''
