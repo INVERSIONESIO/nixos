@@ -7,7 +7,7 @@
     enable = true;
 
     signing = {
-      signByDefault = true;
+      signByDefault = false;
       key = null; # letting GnuPG to decide what signing key to use depending on commit's author
       gpgPath = "${pkgs.gnupg}/bin/gpg2";
     };
