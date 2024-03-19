@@ -13,7 +13,7 @@
       skipStats
       shuffle
       wikify
-      genre
+      # genre
     ];
   };
 }
