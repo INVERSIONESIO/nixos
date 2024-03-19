@@ -6,5 +6,6 @@
     ./fonts.nix
     ./desktop
     ./terminal
+    ./vm
   ];
 }
