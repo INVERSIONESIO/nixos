@@ -6,9 +6,9 @@ in {
 
     gaps_in = 3
     gaps_out = 12
-    border_size = 3
+    border_size = 1
 
-    col.active_border = rgba(000000ff)
+    col.active_border = rgba(0, 0, 0, 0.9)
     col.inactive_border = rgba(59595900)
   '';
 
@@ -16,7 +16,7 @@ in {
     rounding = 4
     blur {
         enabled = true
-        size = 3
+        size = 1
         passes = 1
     }
 
@@ -25,7 +25,7 @@ in {
     fullscreen_opacity = 1.0
 
     drop_shadow = yes
-    shadow_range = 4
+    shadow_range = 2
     shadow_render_power = 3
     col.shadow = rgba(1a1a1aee)
   '';
