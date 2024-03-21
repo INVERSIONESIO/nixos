@@ -648,11 +648,11 @@
         "nixpkgs": "nixpkgs_10"
       },
       "locked": {
-        "lastModified": 1708803613,
-        "narHash": "sha256-RiMolHAam8uSVm/kzsMTJoFiBBKCALSs8BbuEDTbbJA=",
+        "lastModified": 1711056752,
+        "narHash": "sha256-c2NuR/NE6CusmliVL00urKKkrOvlHxSATz+gjLW7DCs=",
         "owner": "luisnquin",
         "repo": "senv",
-        "rev": "b10e54c97c2fb85c04780e91225a93f92857ff57",
+        "rev": "3fa3945eb736c20dbd30bd11dc19cd5210326a2d",
         "type": "github"
       },
       "original": {
