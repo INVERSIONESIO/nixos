@@ -9,6 +9,7 @@
     ./node.nix
     ./etc.nix
     ./sql.nix
+    ./nix.nix
     ./aws.nix
   ];
 }
