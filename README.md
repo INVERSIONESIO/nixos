@@ -77,6 +77,21 @@ This will update the specified input in the [flake.lock](./flake.lock) file but 
 is in you to update your [NixOS](./system) and [Home manager](./home) setup and
 check that everything's working as expected.
 
+## macOS VM guide
+
+This virtual machine is running as a [systemd](https://systemd.io/) service and by default it's not started so to use it you'll need to execute the following command on every new computer boot:
+
+```sh
+# Initializes VM process.
+ $ sudo systemctl start macos-ventura.service
+```
+
+> [!IMPORTANT]  
+> The VNC connection values used below depends on your [macOS Ventura VM definitions](./system/modules/vm/macos-ventura.nix) and the default VNC configurations of [this module](https://github.com/MatthewCroughan/NixThePlanet/blob/master/makeDarwinImage/module.nix).
+
+After that command the qemu VM will be running in background and you will need a [VNC client](https://es.wikipedia.org/wiki/VNC) to connect to it.
+By default **TigerVNC Viewer** is installed, in this case the URL to perform a connection with the server might be `localhost:5900`.
+
 ## Throubleshooting
 
  - [Wireless connection instantly fails on startup when just switched from Windows](https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi#about_dual-boot_with_windows_and_fast-boot_enabled).
